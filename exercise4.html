@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <title>Test Table</title>
+    <style>
+    table, tr, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+    margin: auto;
+    padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- outer first element -->
+        <tr>
+            <!-- First element -->
+            <td><table>
+                <tr>
+                    <!-- has colspan = "2" here was not needed -->
+                    <td rowspan="2">1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+            </table></td>
+            <!-- second element -->
+            <td><table>
+                <tr>
+                    <td>1</td>
+                    <!-- has colspan = "2" here was not needed -->
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                
+            </table></td>	
+        </tr>
+        <!-- outer second element -->
+        <tr>
+            <!-- Third element -->
+            <td><table>
+                <tr>
+                    <td colspan="2">1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table></td>
+            <!-- Fourth element -->
+            <td><table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">3</td>
+                </tr>
+            </table></td> 
+        </tr>
+        <!-- outer Third element -->
+        <tr>
+            <!-- Fifth element -->
+            <td><table>
+                <tr>
+                    <td>1</td>
+                    <!-- has colspan = "3" here was not needed-->
+                    <td rowspan="3">4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+            </table></td>
+            <!-- Sixth element -->
+            <td><table>
+                <tr>
+                    <td colspan="2" rowspan="2">1</td>	
+                    <td>2</td>		
+                </tr>
+                <tr>
+                    <td>4</td>      
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+</body>
+</html>

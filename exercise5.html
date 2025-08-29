@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Acme Corporation Feedback</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+<!-- <form action="https://student2.cs.appstate.edu/crr/3440/homework/h3/contact/" method="post"> -->
+    <form action="https://student2.cs.appstate.edu/crr/3440/homework/h3/contact/" method="post">
+        <!-- This is send us feedback questions-->
+        <fieldset>
+          <legend>Send Us Feedback</legend>
+          <!-- upper section of survey-->
+          <label>To: <br> 
+            <input type="email" id="emailTo" name="emailTo" value="Acme Corporation" readonly><br> 
+          </label><br>
+          <!-- middle section of survey-->
+          <label>
+            Your email address:<br> 
+            <input type="email" id="emailUser" name="emailFrom" required><br>
+          </label> <br>
+          <!-- lower section of survey-->
+          <label>
+            Message: <br>
+            <textarea name="emailBody" cols="20" rows="5" placeholder="Type your message here..."></textarea><br>
+          </label><br>
+        </fieldset>
+        <!-- This is service questions-->
+        <fieldset>
+          <legend>Survey Questions</legend>
+          <!-- upper section of survey-->
+          <label for="questionare">
+            How did you hear about us?<br> 
+            <select name="referrer" id="questionare">
+              <option value="google">Google</option>
+              <option value="ad">Newspaper ad</option>
+              <option value="friend">Friend</option> 
+              <option value="other">Other</option> 
+            </select><br>
+          </label><br>
+          <!-- lower section of survey-->
+          <label for="letter">Would you like to receive our newsletter? <br>
+            <input type="checkbox" id="letter" name="newsletter" value="yes" checked>
+          </label> 
+          <label for="letter">Yes please. Send me the newsletter.</label><br>
+        </fieldset>
+        <!-- This is rate our service(completed)-->
+        <fieldset>
+          <legend>Rate Our Service</legend>
+          <label>
+            <input type="radio" name="rating" value="1">
+            Very Poor
+          </label><br>
+          <label>
+            <input type="radio" name="rating" value="2">
+            Poor
+          </label><br>
+          <label>
+            <input type="radio" name="rating" value="3">
+            Average
+          </label><br>
+          <label>
+            <input type="radio" name="rating" value="4">
+            Good
+          </label><br>
+          <label>
+            <input type="radio" name="rating" value="5">
+            Very Good
+          </label><br>
+        </fieldset>
+      <!-- This is the submit button(completed)-->
+        <input type="submit" value="Send Message">
+      </form>
+</body>
+</html>
